@@ -1,4 +1,3 @@
-// backend/models/db.js
 const { Sequelize } = require('sequelize');
 require('dotenv').config();
 
@@ -12,7 +11,6 @@ const sequelize = new Sequelize(
   }
 );
 
-// Probar conexión (opcional, se verá al ejecutar el server)
 (async () => {
   try {
     await sequelize.authenticate();
